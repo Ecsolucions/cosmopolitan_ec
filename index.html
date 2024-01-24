@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="img/favicon.ico.png">
+    <title>TITULO DE EMPRESA</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script.js"></script>   
+
+    <script>
+        // Script para el slider de imagenes
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        // Script para el alert
+        +    // Function to display a thank you alert and reset a form.
+            +    // Returns false to prevent the form from submitting.
+            function myFunction() {
+                alert("¡Gracias por tu compra!");
+                document.getElementById("myForm").reset();
+                return false;
+
+            }
+            // Asociar el evento de clic al botón de envío
+document.getElementById("submit").addEventListener("click", validarFormulario);
+
+
+
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="barra-busqueda">
+            <div class="titulo">
+                <h1>COSMOPOLITAN</h1>
+                <h2> BIENES Y RAICES Ec</h2>
+            </div>
+            <div class="logo">
+                <img src="img/logo.png" alt="log">
+
+            </div>
+            <div class="logo"><img src="img/logo.png" alt="log"></div>
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </div>
+  
+                <div class="inicio-sesion">
+                    <form action="login.php" method="post">
+                        <input type="text" name="username" placeholder="Nombre de usuario">
+                        <input type="password" name="password" placeholder="Contraseña">
+                        <input type="submit" value="Iniciar sesión">
+                    </form>
+                </div>
+
+        </div>
+        <nav class="barra-nav">
+
+            <ul>
+
+                <li>INICIO</li>
+                <li>NOSOTROS</li>
+                <li>SERVICIOS</li>
+                <li>CONTACTO</li>                         
+              
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Contenido principal aquí, como el slider de imágenes, noticias, etc. -->
+    </main>
+    <footer>
+        <p>Copyright © 2024</p>
+        <p>Derechos Reservados</p>
+    </footer>
+</body>
+
+</html>
