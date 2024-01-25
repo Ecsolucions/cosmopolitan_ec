@@ -39,6 +39,8 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 10px;
+      height: 0 auto;
+      
     }
 
     .logo {
@@ -773,20 +775,20 @@ article{
     padding: 20px;
     margin: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #111111;
+    background-color: #080808;
     color: #ffffff;
     box-shadow: #007bff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #0072bb;
+    background-color: #0A0A0A;
     color: #ffffff;
     box-shadow: #252525;
     box-shadow: #252525;
     border-radius: 10px;
     border: 1px solid #3F3F3F;
-    border: 2px solid #00FF2A;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-color: goldenrod;
-    box-shadow: 0 4px 8px 0 rgba(180 69 112 / 0.72), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid #43FC62;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-color: darkturquoise;
+    box-shadow: 0 4px 8px 0 rgba(36 154 201 / 0.72), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
   }
 
