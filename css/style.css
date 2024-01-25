@@ -1,15 +1,26 @@
  body {
-      background-color: #eaeaea; /* Color de fondo plateado aluminio */
+      
+      /* Color de fondo plateado aluminio */
+      background-color: #E6E6FA;
+      padding: 0;
       margin: 0;
-      font-family: Arial, sans-serif;
-    }
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;}
     
     header {
-      background-color: #000000; /* Color de fondo del encabezado */
+      background-color: #000000;
+      padding: 10px;
+      width: 95%;
+      box-shadow: 0 2px 4px rgba(236 235 235 / 0.1);
       position: fixed;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 2px 4px rgba(0 0 0 / 0.1);
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+
+   
+
     }
 
     .container {
@@ -53,10 +64,15 @@
 
     .search-button {
       background-color: #811AE0;
-      color: #fff;
+      color: #0225F0;
       border: none;
       padding: 2px 20px;
       border-radius: 5px;
+      margin-left: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: #09FF00D7 1px 1px 1px 2px;
+      transition: background-color 0.3s ease;
       cursor: pointer;
     }
 
@@ -102,25 +118,31 @@ header {
 
   display: flex;
   justify-content: space-between;
-  align-items: float;
-  max-width: 1000px;
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 10px;
   height: 0 auto;
-  padding: 5px;
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(252 193 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 
 }
 
 .barra-nav-nosotros {
+  height: 0 auto;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
+  height: 0 auto;
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(252 193 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
   
 }
   /* Separar los elementos de la barra de navegación */
@@ -155,7 +177,14 @@ header {
     }
     
     /* Añade un margen de 10px a la derecha de cada enlace */
-  }
+    nav a:last-child {
+      margin-right: 10px; 
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-inline-end: 10px;
+      pointer-events: painted;
+      margin-inline-start: 10px;
+    }
 
 
 h1 {
