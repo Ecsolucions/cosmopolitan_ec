@@ -23,7 +23,8 @@
     
     header {
       background-color: #121212;
-      padding: 10px;
+      padding: 20px;
+      width: 100%;
       -webkit-box-flex: inherit;
       -ms-flex: inherit;
       flex: inherit;
@@ -32,7 +33,6 @@
       -webkit-box-shadow: 0 2px 4px rgba(236 235 235 / 0.1);
       box-shadow: 0 2px 4px rgba(236 235 235 / 0.1);
       -webkit-box-shadow: 0 2px 4px rgba(236 235 235 / 0.1);     
-   
       box-shadow: 0 2px 4px rgba(236 235 235 / 0.1);
       position: fixed;
       top: 0;
@@ -69,11 +69,16 @@
       align-items: center;
     }
     
-
+/* Estilos para los elementos de la barra de navegación */
+/* botones de la barra logos */
     .logo img {
       width: 50px;
       height: 50px;
       margin-right: 10px;
+      border-radius: 50%;
+      box-shadow: #09FF00D7 1px 1px 1px 2px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
     }
 
     .logo h1 {
@@ -83,27 +88,44 @@
 
     }
 
+    .barra-nav ul {
+      list-style: none;
+      padding: 0;
+    }   
+    
     .barra-busqueda {
       display: flex;
     }
     .search-bar {
         
-      width: 100px;
-      padding: 2px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid #FFFFFF;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        height: 30px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 38px;
+        background-color: #fff;
+      
+
     }
 
     .search-button {
+      
       background-color: #811AE0;
       color: #0225F0;
       border: none;
       padding: 2px 20px;
       border-radius: 5px;
       margin-left: 5px;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
-      box-shadow: #09FF00D7 1px 1px 1px 2px;
+      box-shadow: #FFFFFFD7 1px 1px 1px 2px;
       transition: background-color 0.3s ease;
       cursor: pointer;
     }
@@ -143,7 +165,7 @@ body {
 header {
   background-color: #000000;
   padding: 10px;
-  box-shadow: 0 2px 4px rgba(236 235 235 / 0.1);
+  box-shadow: 0 2px 4px rgb(255 255 255);
 }
 
 .barra-nav {
@@ -187,7 +209,7 @@ header {
     margin-inline-start: 10px;
     padding: 10px;
     text-decoration: none;
-    color: #fff;
+    color: #1B1B1B;
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
