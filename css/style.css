@@ -14,7 +14,7 @@
 /* Estilos CSS */
 body {
   /* Color de fondo plateado aluminio */
-  background-color: #083ED3;
+  background-color: #070707;
   padding: 10;
   margin: 100px;
   font-family: Arial, sans-serif;
@@ -41,6 +41,7 @@ header {
 }
 
  main {
+  background-position: 0%;
   background-color: #126899BE;
   padding: 1000px;
   height: 60%;
@@ -840,3 +841,13 @@ footer img:hover {
   opacity: 0.7;
 }
 
+
+            /* Estilos para ocultar la barra de contraseña por defecto */
+            #contraseña {
+              display: none;
+          }
+      
+          /* Estilos para mostrar la barra de contraseña cuando se marque el checkbox */
+          #mostrar-contraseña:checked ~ form #contraseña {
+              display: block;
+          }
