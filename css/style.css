@@ -62,7 +62,7 @@ li a:hover {
 
 /* Estilos para el contenido principal */
 main {
-  margin-top: 100px;
+  margin-top: 100%;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
@@ -78,16 +78,20 @@ main {
 /* Estilos CSS */
 body {
   /* Color de fondo plateado aluminio */
-  background-color: #E5E5E5;
+  background-color: #2B788B;
   /* Color de texto */
   color: #0F0F0F;
   /* Fuente */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
  
 }
-
+/*º Estilos para el encabezado, position fixed para que el encabezado permanezca fijo */
 header {
   background-color: #0F0F0F8F;
   padding: 10px;
@@ -95,9 +99,8 @@ header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   border-radius: var(#1B324B);
-  position: fixed;
+  position: relative;
   top: 0;
-  left: 0;
   right: 0;
   z-index: 999;
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -107,13 +110,12 @@ header {
 
 }
 
- main {
-  background-position: 0%;
-  background-color: #126899BE;
+ .main {
+  background-position: center;
+  background-color: #BBB5B5BE;
   padding: 1000px;
-  height: 60%;
-  max-height: 1200px;
-  max-width: 1200px;
+  height: 1000px;
+  width: 1000px;
   margin: 0 auto;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -132,7 +134,7 @@ h1 {
   margin: 30px;
   font-size: 40px;
   font-weight: bold;
-  color: whitesmoke;
+  color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -148,7 +150,7 @@ h2 {
   margin: 20px;
   font-size: 20px;
   font-weight: bold;
-  color: whitesmoke;
+  color: darkkhaki;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -159,7 +161,7 @@ h3 {
   margin: 25px;
   font-size: 20px;
   font-weight: bold;
-  color: whitesmoke;
+  color: black;
   border: 0.5px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -303,16 +305,20 @@ search-button:hover {
   box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+.search-bar-container:focus-within .search-bar {
+  border: none;
+  outline: none;
+  
 }
+.search-bar {
+  border: none;
+}
+
 /*modifica el padding para bajar el header/encabezado*/
 header {
-  background-color: #000000;
+  background-color: #050505;
   padding: 5px;
-  box-shadow: 0 2px 4px rgb(255 255 255);
+  box-shadow: 0 2px 4px rgb(58 57 57);
 }
 /*modifica el padding para bajar la barra de navegación*/
 .barra-nav {

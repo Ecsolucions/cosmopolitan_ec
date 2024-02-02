@@ -4,33 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<style>
+  /* controla el slider:  si eliminas el height queda en automatico*/
+  .swiper {
+  height: 400px;
+  
+
+}
+/*here control imagines*/
+img{
+  height: 400px;
+  width: 30%;
+  object-fit: cover;
+}
+
+</style>
+    
+
     
     <title>Document</title>
 </head>
 <body>
-    <div class="slider">
-        <img src="img/pic_inmuebles/TONSUPA (1).jpg" alt="Imagen 1">
-        <img src="img/pic_inmuebles/TONSUPA (2).jpg" alt="Imagen 2">
-        <img src="img/pic_inmuebles/pngwing.com (37).png" alt="Imagen 3">
-      </div>
+  <header>
 
-      <script>
-        $('.slider').slick({
-          dots: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        });
-        </script>
-        
-
+    <div>
+      <h1>
+        COSMOPOLITAN SLIDER EC
+      </h1>
+    </div>
+ 
       
+    </header>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/icons/Facebook icon.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/icons/Gmail.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/icons/insta.png" alt=""></div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+<script>
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+</script>
 </body>
 </html>
