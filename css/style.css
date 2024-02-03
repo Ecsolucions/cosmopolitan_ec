@@ -16,8 +16,18 @@
   /* Add responsive styles for even even smaller screens here */
 }
 
-header
+/* Estilos para el encabezado */
+.header {
+  background-color: #000000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
 /* Estilos para la barra de navegación */
 nav {
   background-color: #000000;
@@ -25,7 +35,7 @@ nav {
   margin: 5px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  border-radius: 10px;
+  border-radius: 35px;
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -37,50 +47,47 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-anchor: auto;
 }
 
 
 li {
   display: inline;
   float: left;
+  
 }
 
 
 li a {
 
   display: block;
-  color: #0F0F0F;
+  color: #077973;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #0F0F0F;
-}
-
-/* Estilos para el contenido principal */
-main {
-  margin-top: 100%;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    background-color: #3553B49D;
+    
 }
 
 
+/* Estilos para el menu de navegación */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
 
 /* Estilos CSS */
 body {
   /* Color de fondo plateado aluminio */
-  background-color: #2B788B;
+  background-color: #BE800B;
   /* Color de texto */
-  color: #0F0F0F;
+  color: #0A6296;
   /* Fuente */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -91,47 +98,34 @@ body {
  left: 0;
  
 }
-/*º Estilos para el encabezado, position fixed para que el encabezado permanezca fijo */
-header {
-  background-color: #0F0F0F8F;
-  padding: 10px;
-  margin: 5px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  border-radius: var(#1B324B);
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 999;
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+
+
+
+/* Estilos para el contenido principal */
+.main {
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+  background-color: #0A0A0A;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 }
 
- .main {
-  background-position: center;
-  background-color: #BBB5B5BE;
-  padding: 1000px;
-  height: 1000px;
-  width: 1000px;
-  margin: 0 auto;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-  
-}
 
 
 
 h1 {
+
   text-align: center;
   position: relative;
+  padding: 5px;
   margin: 30px;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
   font-size: 40px;
   font-weight: bold;
   color: white;
@@ -147,12 +141,19 @@ h1 {
 h2 {
   text-align: center;
   position: relative;
-  margin: 20px;
-  font-size: 20px;
+  padding: 5px;
+  margin: 30px;
+  font-size: 30px;
   font-weight: bold;
-  color: darkkhaki;
-  border: 1px solid #ccc;
+  color: white;
+  border: 1px solid #000000;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
 
 h3 {
@@ -174,6 +175,7 @@ h3 {
 
 
 .logo {
+  ruby-position: over;
   display: flex;
   align-items: center;
 }
@@ -182,8 +184,9 @@ h3 {
 /* botones de la barra logos */
 .logo img {
   border-radius: 50%;
+  border: 1px solid #ccc;
   width: 50px;
-  display: inline-block;    
+  height: 50px;
   margin: 10px;
   margin-top: 10px;
   margin-left: 20px;
@@ -207,8 +210,8 @@ h3 {
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
-  border: 5px solid #ccc;
-  border-radius: 5px;
+  border: 5px solid #080808;
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

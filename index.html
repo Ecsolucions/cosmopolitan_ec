@@ -2,264 +2,269 @@
 <html>
 
 <head>
-    <link rel="icon" href="img/favicon.ico.png">
-    <title>COSMOPOLITAN</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
-<script src="node_modules/slick-carousel/slick/slick.min.js"></script>
-    <script src="script.js"></script>
+  <link rel="icon" href="img/favicon.ico.png">
+  <title>COSMOPOLITAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+  <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="barra-busqueda">
-            <div class="titulo">
-                <div>
+  <header class="header">
+    <div class="barra-busqueda">
+      <div class="titulo">
+        <div>
 
-                    <h1>COSMOPOLITAN</h1>
-                    <h2> bienes & raices ec</h2>
+          <h1>COSMOPOLITAN</h1>
+          <h2> bienes & raices ec</h2>
 
-                </div>
-            </div>
+        </div>
+      </div>
 
-            <div class="logo"><img src="img/logo.png" alt="log"><a href="slider.html"></a></div>
-            <div class="logo"><img src="img/logo.png" alt="log"></div>
-            <div class="logo"><img src="img/logo.png" alt="log"></div>
+      <div>
+        <div class="logo"><img src="img/logo.png" alt="log"></div>
+        <div class="logo"><img src="img/logo.png" alt="log"></div>
+        <div class="logo"><img src="img/logo.png" alt="log"></div>
+      </div>
 
-            <div class="search-bar-container">
-                <input type="text" class="search-bar" placeholder="Buscar...">
-                <button type="submit">Buscar</button>
-            </div>
+
+
+      <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+      </div>
+
+
+    </div>
+    <nav class="barra-nav">
+
+
+      <li>
+
+        <div> <a href="index.html">INICIO</a></div>
+
+      </li>
+
+
+
+
+      <li>
+        <div><a href="blog.html">BLOG</a></div>
+
+      </li>
+
+
+      <li>
+
+        <div> <a href="contacto.html">CONTACTO</a></div>
+
+      </li>
+
+      <li>
+        <div>
+
+      <li id="servicio-menu" style="display: none;">
+      <li><a href="#servicio-section">Inmobiliarios</a></li>
+      <li><a href="#legal-section">Trámites Legales</a></li>
+      </li>
+
+      </div>
+      </li>
+
+      <li>
+        <div><a href="#domotica-section">DOMOTICA</a></div>
+      </li>
+
+
+      <li>
+        <div><a href="proyectos.html">PROYECTOS</a></div>
+
+      </li>
+
+      <li>
+
+        <div>
+
+          <a href="venta.html">VENTA</a>
 
 
         </div>
-        <nav class="barra-nav">
 
-
-            <li>
-
-                <div> <a href="index.html">INICIO</a></div>
-
-            </li>
+      </li>
 
 
 
-
-            <li>
-                <div><a href="blog.html">BLOG</a></div>
-
-            </li>
+    </nav>
 
 
-            <li>
+  </header>
 
-                <div> <a href="contacto.html">CONTACTO</a></div>
+  <main>
 
-            </li>
+    <div class="banner">
+      <img src="img/LOGOTIPO BLOQUES.jpg" alt="Representación de propiedades">
+      <div class="banner-text">
+        <a href="propiedades.html" class="cta-button">Ver propiedades</a>
+        <a href="contacto.html" class="cta-button">Contactar</a>
 
-            <li>
-                <div>
-
-            <li id="servicio-menu" style="display: none;">
-            <li><a href="#servicio-section">Inmobiliarios</a></li>
-            <li><a href="#legal-section">Trámites Legales</a></li>
-            </li>
-
-            </div>
-            </li>
-
-            <li>
-                <div><a href="#domotica-section">DOMOTICA</a></div>
-            </li>
-
-
-            <li>
-                <div><a href="proyectos.html">PROYECTOS</a></div>
-
-            </li>
-
-            <li>
-
-                <div>
-
-                    <a href="venta.html">VENTA</a>
-
-
-                </div>
-
-            </li>
-
-
-
-        </nav>
-
-
-    </header>
-
-    <main>
-
-        <div class="banner">
-          <img src="img/LOGOTIPO BLOQUES.jpg" alt="Representación de propiedades">
-          <div class="banner-text">
-            <a href="propiedades.html" class="cta-button">Ver propiedades</a>
-            <a href="contacto.html" class="cta-button">Contactar</a>
-
-            <div class="inicio-sesion">
-              <form action="login.php" method="post">
-                  <input type="text" name="username" placeholder="Nombre de usuario">
-                  <input type="password" name="password" placeholder="Contraseña">
-                  <input type="submit" value="Iniciar sesión">
-              </form>
-          </div>
-          </div>
-        </div>
-
-
-        <!-- Sección de propiedades destacadas -->
-        <div class="featured-properties">
-          <h2>Propiedades destacadas</h2>
-          <div class="property-carousel">
-            <!-- Carrusel de imágenes con información básica de cada propiedad -->
-            <div class="property">
-              <img src="propiedad1.jpg" alt="Propiedad 1">
-              <p>Precio: $xxx</p>
-              <p>Ubicación: Ciudad, País</p>
-              <p>Tipo: Casa</p>
-              <p>Habitaciones: 3 | Baños: 2</p>
-              <p>Superficie: xxx m²</p>
-              <a href="propiedad1.html" class="property-link">Ver más</a>
-            </div>
-            <!-- Repetir para las demás propiedades destacadas -->
-          </div>
-        </div>
-        
-        <!-- Sección de búsqueda de propiedades -->
-        <div class="property-search">
-          <h2>Búsqueda de propiedades</h2>
-          <form action="buscar-propiedades.html" method="GET">
-            <label for="location">Ubicación:</label>
-            <input type="text" id="location" name="location">
-        
-            <label for="property-type">Tipo de propiedad:</label>
-            <select id="property-type" name="property-type">
-              <option value="casa">Casa</option>
-              <option value="apartamento">Apartamento</option>
-              <!-- Otras opciones de tipo de propiedad -->
-        
-            </select>
-        
-            <label for="bedrooms">Habitaciones:</label>
-            <input type="number" id="bedrooms" name="bedrooms" min="1" max="10">
-
-
-            <label for="bathrooms">Baños:</label>
-            <input type="number" id="bathrooms" name="bathrooms" min="1" max="10">
-
-
-            <label for="price-range">Rango de precio:</label>
-            <input type="range" id="price-range" name="price-range" min="0" max="100000">
-
-
-            <input type="submit" value="Buscar">
-
+        <div class="inicio-sesion">
+          <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Nombre de usuario">
+            <input type="password" name="password" placeholder="Contraseña">
+            <input type="submit" value="Iniciar sesión">
           </form>
-
-
         </div>
-
-        <!-- Sección de últimas noticias -->
-        <div class="latest-news">
-          <h2>Últimas noticias</h2>
-          <div class="article-list">
-            <div class="article">
-              <img src="noticia1.jpg" alt="Noticia 1">
-              <h3>Título del artículo</h3>
-              <p>Fecha de publicación: xx/xx/xxxx</p>
-              <p>Resumen del artículo</p>
-              <a href="noticia1.html" class="article-link">Leer más</a>
-            </div>
-            <!-- Repetir para los demás artículos de noticias -->
-          </div>
-        </div>
-        
-        <!-- Sección de sobre nosotros -->
-        <div class="about-us">
-          <h2>Sobre nosotros</h2>
-          <p>Información sobre la inmobiliaria: Historia, Misión y visión, Equipo de profesionales, Premios y reconocimientos.</p>
-        </div>
-        
-        <!-- Sección de contacto -->
-        <div class="contact">
-          <h2>Contacto</h2>
-          <form action="enviar-mensaje.php" method="POST">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="phone">Teléfono:</label>
-            <input type="tel" id="phone" name="phone">
-        
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        
-            <!-- Captcha -->
-            <!-- ... -->
-        
-            <input type="submit" value="Enviar mensaje">
-          </form>
-          <div class="contact-info">
-            <p>Dirección: Dirección de la inmobiliaria</p>
-            <p>Teléfono: Número de teléfono</p>
-            <p>Correo electrónico: correo@inmobiliaria.com</p>
-            <p>Redes sociales: Enlaces a las redes sociales</p>
-          </div>
-        </div>
-        
-        <!-- Pie de página (footer) -->
-        <footer>
-          <h2>Pie de página</h2>
-          <p>Información de contacto</p>
-          <p>Enlaces de interés</p>
-          <p>Servicios</p>
-          <p>Terminos y condiciones</p>
-          <p>Preguntas frecuentes</p>
-          <p>Sobre la inmobiliaria</p>
-          <p>Opiniones</p>
-          <p>Privacidad</p>
-          <p>Seguridad</p>
-          <p>Calendario de eventos</p>
-          <p>Trabaja con nosotros</p>
-          <p>Redes sociales</p>
-          <p>Blog</p>
-          <p>Testimonios</p>
-          <p>Asesoria legal</p>
-          <p>Mapa del sitio</p>
-          <p>Calculadora de hipotecas</p>
-          <p>Tasación online de propiedades</p>
-          <p>Blog inmobiliario</p>
-          <p>Testimonios de clientes</p>
-          <p>Mapa del sitio</p>
-          <p>Calculadora de hipotecas</p>
-          <p>Tasación online de propiedades</p>      
-          <p>Mapa del sitio</p>
-          <p>Copyright y información legal</p>
-          <ul>
-            <li><a href="blog.html">Blog inmobiliario</a></li>
-            <li><a href="testimonios.html">Testimonios de clientes</a></li>
-            <!-- Otros enlaces a páginas web de la inmobiliaria -->
-          </ul>
-          <a href="mapa-del-sitio.html">Mapa del sitio</a>
-          <a href="calculadora-hipotecas.html">Calculadora de hipotecas</a>
-          <a href="tasacion-online.html">Tasación online de propiedades</a>
-        </footer>
+      </div>
+    </div>
 
 
-    </main>
+    <!-- Sección de propiedades destacadas -->
+    <div class="featured-properties">
+      <h2>Propiedades destacadas</h2>
+      <div class="property-carousel">
+        <!-- Carrusel de imágenes con información básica de cada propiedad -->
+        <div class="property">
+          <img src="propiedad1.jpg" alt="Propiedad 1">
+          <p>Precio: $xxx</p>
+          <p>Ubicación: Ciudad, País</p>
+          <p>Tipo: Casa</p>
+          <p>Habitaciones: 3 | Baños: 2</p>
+          <p>Superficie: xxx m²</p>
+          <a href="propiedad1.html" class="property-link">Ver más</a>
+        </div>
+        <!-- Repetir para las demás propiedades destacadas -->
+      </div>
+    </div>
+
+    <!-- Sección de búsqueda de propiedades -->
+    <div class="property-search">
+      <h2>Búsqueda de propiedades</h2>
+      <form action="buscar-propiedades.html" method="GET">
+        <label for="location">Ubicación:</label>
+        <input type="text" id="location" name="location">
+
+        <label for="property-type">Tipo de propiedad:</label>
+        <select id="property-type" name="property-type">
+          <option value="casa">Casa</option>
+          <option value="apartamento">Apartamento</option>
+          <!-- Otras opciones de tipo de propiedad -->
+
+        </select>
+
+        <label for="bedrooms">Habitaciones:</label>
+        <input type="number" id="bedrooms" name="bedrooms" min="1" max="10">
+
+
+        <label for="bathrooms">Baños:</label>
+        <input type="number" id="bathrooms" name="bathrooms" min="1" max="10">
+
+
+        <label for="price-range">Rango de precio:</label>
+        <input type="range" id="price-range" name="price-range" min="0" max="100000">
+
+
+        <input type="submit" value="Buscar">
+
+      </form>
+
+
+    </div>
+
+    <!-- Sección de últimas noticias -->
+    <div class="latest-news">
+      <h2>Últimas noticias</h2>
+      <div class="article-list">
+        <div class="article">
+          <img src="noticia1.jpg" alt="Noticia 1">
+          <h3>Título del artículo</h3>
+          <p>Fecha de publicación: xx/xx/xxxx</p>
+          <p>Resumen del artículo</p>
+          <a href="noticia1.html" class="article-link">Leer más</a>
+        </div>
+        <!-- Repetir para los demás artículos de noticias -->
+      </div>
+    </div>
+
+    <!-- Sección de sobre nosotros -->
+    <div class="about-us">
+      <h2>Sobre nosotros</h2>
+      <p>Información sobre la inmobiliaria: Historia, Misión y visión, Equipo de profesionales, Premios y
+        reconocimientos.</p>
+    </div>
+
+    <!-- Sección de contacto -->
+    <div class="contact">
+      <h2>Contacto</h2>
+      <form action="enviar-mensaje.php" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Captcha -->
+        <!-- ... -->
+
+        <input type="submit" value="Enviar mensaje">
+      </form>
+      <div class="contact-info">
+        <p>Dirección: Dirección de la inmobiliaria</p>
+        <p>Teléfono: Número de teléfono</p>
+        <p>Correo electrónico: correo@inmobiliaria.com</p>
+        <p>Redes sociales: Enlaces a las redes sociales</p>
+      </div>
+    </div>
+
+    <!-- Pie de página (footer) -->
+    <footer>
+      <h2>Pie de página</h2>
+      <p>Información de contacto</p>
+      <p>Enlaces de interés</p>
+      <p>Servicios</p>
+      <p>Terminos y condiciones</p>
+      <p>Preguntas frecuentes</p>
+      <p>Sobre la inmobiliaria</p>
+      <p>Opiniones</p>
+      <p>Privacidad</p>
+      <p>Seguridad</p>
+      <p>Calendario de eventos</p>
+      <p>Trabaja con nosotros</p>
+      <p>Redes sociales</p>
+      <p>Blog</p>
+      <p>Testimonios</p>
+      <p>Asesoria legal</p>
+      <p>Mapa del sitio</p>
+      <p>Calculadora de hipotecas</p>
+      <p>Tasación online de propiedades</p>
+      <p>Blog inmobiliario</p>
+      <p>Testimonios de clientes</p>
+      <p>Mapa del sitio</p>
+      <p>Calculadora de hipotecas</p>
+      <p>Tasación online de propiedades</p>
+      <p>Mapa del sitio</p>
+      <p>Copyright y información legal</p>
+      <ul>
+        <li><a href="blog.html">Blog inmobiliario</a></li>
+        <li><a href="testimonios.html">Testimonios de clientes</a></li>
+        <!-- Otros enlaces a páginas web de la inmobiliaria -->
+      </ul>
+      <a href="mapa-del-sitio.html">Mapa del sitio</a>
+      <a href="calculadora-hipotecas.html">Calculadora de hipotecas</a>
+      <a href="tasacion-online.html">Tasación online de propiedades</a>
+    </footer>
+
+
+  </main>
 
 
 </body>
