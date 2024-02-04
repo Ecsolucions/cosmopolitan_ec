@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
-  <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
-  <script src="script.js"></script>
+
+
+
 </head>
 
 <body>
@@ -31,6 +31,85 @@
         <div class="logo"><img src="img/logo.png" alt="log"></div>
       </div>
 
+      <div>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        <style>
+          /* controla el slider:  si eliminas el height queda en automatico*/
+
+          .swiper {
+            height: 400px;
+
+
+          }
+
+          /*here control imagines*/
+          img {
+            height: 400px;
+            width: 30%;
+            object-fit: cover;
+          }
+        </style>
+
+
+
+
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/icons/Facebook icon.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/icons/Gmail.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/icons/insta.png" alt=""></div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+
+
+
+        <script>
+
+          const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+              el: '.swiper-scrollbar',
+            },
+          });
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+      </div>
 
 
       <div class="search-bar-container">
@@ -39,7 +118,13 @@
       </div>
 
 
+
     </div>
+
+
+    </div>
+
+
     <nav class="barra-nav">
 
 
@@ -97,13 +182,23 @@
       </li>
 
 
+      <li>
+        <div><a href="nosotros.html">NOSOTROS</a></div>
+      </li>
+
+
 
     </nav>
+
+
+
+
 
 
   </header>
 
   <main>
+
 
     <div class="banner">
       <img src="img/LOGOTIPO BLOQUES.jpg" alt="Representación de propiedades">
