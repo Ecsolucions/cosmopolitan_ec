@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 </head>
 
@@ -35,20 +37,55 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+
+
+
         <style>
           /* controla el slider:  si eliminas el height queda en automatico*/
 
           .swiper {
-            height: 400px;
 
+            width: 600px;
+            height: 330px;
 
           }
 
+
+
           /*here control imagines*/
           img {
-            height: 400px;
-            width: 30%;
-            object-fit: cover;
+
+            height: 300px;
+            width: 70%;
+            object-fit: contain;
+          }
+
+          .swiper-wrapper {
+
+            width: 700px;
+            height: 330px;
+          }
+
+
+          .swiper-slide {
+            width: 200px;
+            height: 300px;
+          }
+
+          .swiper-button-next,
+          .swiper-button-prev {
+            white-space: nowrap;
+            color: #04F8C3;
+
+          }
+
+          swiper-pagination {
+            color: #04F8C3;
+          }
+
+          .swiper--scrollbar {
+            width: 200px;
+            height: 300px;
           }
         </style>
 
@@ -63,7 +100,11 @@
             <!-- Slides -->
             <div class="swiper-slide"><img src="img/icons/Facebook icon.png" alt=""></div>
             <div class="swiper-slide"><img src="img/icons/Gmail.png" alt=""></div>
-            <div class="swiper-slide"><img src="img/icons/insta.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/icons/like face.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/icons/Facebook icon.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/icons/Gmail.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/icons/like face.png" alt=""></div>
+
             ...
           </div>
           <!-- If we need pagination -->
@@ -104,18 +145,14 @@
             },
           });
 
+
+
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+        
 
 
       </div>
 
-
-      <div class="search-bar-container">
-        <input type="text" class="search-bar" placeholder="Buscar...">
-        <button type="submit">Buscar</button>
-      </div>
 
 
 
@@ -136,13 +173,6 @@
 
 
 
-
-      <li>
-        <div><a href="blog.html">BLOG</a></div>
-
-      </li>
-
-
       <li>
 
         <div> <a href="contacto.html">CONTACTO</a></div>
@@ -153,7 +183,7 @@
         <div>
 
       <li id="servicio-menu" style="display: none;">
-      <li><a href="#servicio-section">Inmobiliarios</a></li>
+
       <li><a href="#legal-section">Trámites Legales</a></li>
       </li>
 
@@ -172,19 +202,22 @@
 
       <li>
 
-        <div>
-
-          <a href="venta.html">VENTA</a>
-
-
-        </div>
-
-      </li>
-
 
       <li>
         <div><a href="nosotros.html">NOSOTROS</a></div>
       </li>
+
+
+
+      <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+      </div>
+
+
+
+      </li>
+
 
 
 

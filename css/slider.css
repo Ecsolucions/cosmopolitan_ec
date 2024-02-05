@@ -1,18 +1,3 @@
 
 
 
-  /* controla el slider:  si eliminas el height queda en automatico*/
-  .swiper {
-  height: 400px;
-  
-
-}
-/*here control imagines*/
-.img{
-
-  height: 400px;
-  width: 30%;
-  object-fit: cover;
-
-  
-}
