@@ -550,114 +550,22 @@ column {
   background-color: #ccc;
 }
 
-.featured-properties {
+.parent-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
-
 }
 
-.properity-card {
-  flex-basis: calc(33.33% - 20px);
-  margin-bottom: 20px;
-  background-color: #E6E3E3;
-  padding: 10px;
-  margin: 5px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.banner {
+
+  position: relative;
+
+  /* Styles for the banner */
 }
 
-.featured-propiedad {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
-
+.container {
+  position: relative;
+    /* Styles for the container */
+  /* You can set the width and height here */
 }
 
-.property{
-
-  background-color: #11282C;
-  padding: 10px;
-  margin: 5px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-  
-}
-
-
-
-
-footer {
-  background-color: #000000;
-  padding: 10px;
-  margin: 5px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} 
-
-
-/* Estilos para la sección de últimas noticias */
-.latest-news {
-  /* Estilos para el contenedor de últimas noticias */
-  margin-bottom: 20px;
-
-}
-
-.article-list {
-  /* Estilos para la lista de artículos de noticias */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-}
-
-.article {
-  /* Estilos para cada artículo de noticias */
-  margin-bottom: 20px;
-
-
-}
-
-/* Estilos para la sección de sobre nosotros */
-.about-us {
-  /* Estilos para el contenedor de información sobre la inmobiliaria */
-  margin-bottom: 20px;
-
-}
-
-/* Estilos para la sección de contacto */
-.contact {
-  /* Estilos para el contenedor de la sección de contacto */
-  margin-bottom: 20px;
-
-}
-
-form {
-  /* Estilos para el formulario de contacto */
-  margin-bottom: 20px;
-}
-
-.contact-info {
-  /* Estilos para la información de contacto */
-  margin-bottom: 20px;
-
-}
-
-/* Estilos para el pie de página */
-footer {
-  /* Estilos para el contenedor del pie de página */
-  margin-bottom: 20px;
-
-}
 
