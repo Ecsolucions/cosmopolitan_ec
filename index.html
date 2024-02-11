@@ -44,7 +44,7 @@
           /* controla el slider:  si eliminas el height queda en automatico*/
 
           .swiper {
-           
+
             width: 600px;
             height: 330px;
 
@@ -148,7 +148,7 @@
 
 
         </script>
-        
+
 
 
       </div>
@@ -235,153 +235,112 @@
     <div class="column">
 
 
-    <div class="banner">
-      <img src="img/LOGOTIPO BLOQUES.jpg" alt="Representación de propiedades">
-      <div class="banner-text">
-        <a href="propiedades.html" class="cta-button">Ver propiedades</a>
-        <a href="contacto.html" class="cta-button">Contactar</a>
+      <div class="banner">
+        <img src="img/LOGOTIPO BLOQUES.jpg" alt="Representación de propiedades">
+        <div class="banner-text">
+          <a href="propiedades.html" class="cta-button">Ver propiedades</a>
+          <a href="contacto.html" class="cta-button">Contactar</a>
 
-        <div class="inicio-sesion">
-          <form action="login.php" method="post">
-            <input type="text" name="username" placeholder="Nombre de usuario">
-            <input type="password" name="password" placeholder="Contraseña">
-            <input type="submit" value="Iniciar sesión">
-          </form>
+          <div class="inicio-sesion">
+            <form action="login.php" method="post">
+              <input type="text" name="username" placeholder="Nombre de usuario">
+              <input type="password" name="password" placeholder="Contraseña">
+              <input type="submit" value="Iniciar sesión">
+            </form>
+          </div>
         </div>
       </div>
-    </div>
- 
+
+      <div class="contenedor">
+        <section>
 
 
-    <!-- Sección de propiedades destacadas -->
-    <div class="featured-properties">
-      <h2>Propiedades destacadas</h2>
-      <div class="property-carousel">
-        <!-- Carrusel de imágenes con información básica de cada propiedad -->
-        <div class="property">
-          <img src="img/Quito Tennis/WhatsApp Image 2024-01-25 at 19.18.26(1).jpeg" alt="Propiedad 1">
-          <p>Precio: $xxx</p>
-          <p>Ubicación: Ciudad, País</p>
-          <p>Tipo: Casa</p>
-          <p>Habitaciones: 3 | Baños: 2</p>
-          <p>Superficie: xxx m²</p>
-          <a href="propiedad1.html" class="property-link">Ver más</a>
-        </div>
-        <!-- Repetir para las demás propiedades destacadas -->
+
+
+          <aside>
+            
+
+              <div id="ruleta">
+                
+                    <title>Ruleta de premios</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <style>
+                        .container {
+                            text-align: center;
+                            margin-top: 50px;
+                        }
+                        .premio {
+                            display: none; /* La imagen del premio estará oculta inicialmente */
+                            margin-top: 20px;
+                        }
+                    </style>
+                
+                    <div class="container">
+                        <h1>¡Juega a la ruleta y gana premios!</h1>
+                        <p>Elige un número del 1 al 100:</p>
+                        <input type="number" id="numeroElegido" min="1" max="100">
+                        <button onclick="girarRuleta()">Girar la ruleta</button>
+                        <p id="resultado"></p>
+                
+                        <!-- Imagen del premio -->
+                      <div class="premio">
+
+                        <img src="img/Cena premio/cena regalo1.jpg" class="premio" alt="Cena por la compra de una casa">
+                      
+                      </div>
+
+                    </div>
+
+
+                      </div>
+                
+                    <script>
+                        function girarRuleta() {
+                            var numeroElegido = parseInt(document.getElementById('numeroElegido').value);
+                            var numeroGanador = Math.floor(Math.random() * 10) + 1; // Genera un número aleatorio del 1 al 10
+                
+                            if (numeroElegido === numeroGanador) {
+                                document.getElementById('resultado').innerText = '¡Felicidades! ¡Has ganado un premio!';
+                                document.querySelector('.premio').style.display = 'block'; // Muestra la imagen del premio
+                            } else {
+                                document.getElementById('resultado').innerText = 'Lo siento, no has ganado esta vez. Inténtalo de nuevo.';
+                                document.querySelector('.premio').style.display = 'none'; // Oculta la imagen del premio
+                            }
+                        }
+                    </script>
+               
+          
+            </div>
+
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            <h2>Noticias</h2>
+            <di>
+              <p>NEW 1<a
+                  href="https://www.eleconomista.es/inmobiliaria/noticias/11612515/02/22/El-volumen-de-inversion-inmobiliaria-mundial-aumento-un-38-en-2021.html">Estadísticas</a>
+              </p>
       </div>
-    </div>
-
-    <!-- Sección de propiedades destacadas -->
-    <div class="featured-propiedad">
-      <h2></h2>
-      <div class="property-carousel">
-        <!-- Carrusel de imágenes con información básica de cada propiedad -->
-        <div class="property">
-          <img src="img/pics/pngwing.com (15).png alt="Propiedad 1">
-          <p>Precio: $xxx</p>
-          <p>Ubicación: Ciudad, País</p>
-          <p>Tipo: Casa</p>
-          <p>Habitaciones: 3 | Baños: 2</p>
-          <p>Superficie: xxx m²</p>
-          <a href="propiedad1.html" class="property-link">Ver más</a>
-        </div>
-        <!-- Repetir para las demás propiedades destacadas -->
+      <div>
+        <p> NEW 2 <a
+            href="https://profesionalenbienesraices.com/perspectivas-del-mercado-inmobiliario-ecuatoriano-en-2024">Tendencias
+            del mercado</a></p>
       </div>
-    </div>
-
-  
-  </div>
-
-    <!-- Sección de búsqueda de propiedades -->
-    <div class="property-search">
-      <h2>Búsqueda de propiedades</h2>
-      <form action="buscar-propiedades.html" method="GET">
-        <label for="location">Ubicación:</label>
-        <input type="text" id="location" name="location">
-
-        <label for="property-type">Tipo de propiedad:</label>
-        <select id="property-type" name="property-type">
-          <option value="casa">Casa</option>
-          <option value="apartamento">Apartamento</option>
-          <!-- Otras opciones de tipo de propiedad -->
-
-        </select>
-
-        <label for="bedrooms">Habitaciones:</label>
-        <input type="number" id="bedrooms" name="bedrooms" min="1" max="10">
-
-
-        <label for="bathrooms">Baños:</label>
-        <input type="number" id="bathrooms" name="bathrooms" min="1" max="10">
-
-
-        <label for="price-range">Rango de precio:</label>
-        <input type="range" id="price-range" name="price-range" min="0" max="100000">
-
-
-        <input type="submit" value="Buscar">
-
-      </form>
-
-
-    </div>
-
-    <!-- Sección de últimas noticias -->
-    <div class="latest-news">
-      <h2>Últimas noticias</h2>
-      <div class="article-list">
-        <div class="article">
-          <img src="noticia1.jpg" alt="Noticia 1">
-          <h3>Título del artículo</h3>
-          <p>Fecha de publicación: xx/xx/xxxx</p>
-          <p>Resumen del artículo</p>
-          <a href="noticia1.html" class="article-link">Leer más</a>
-        </div>
-        <!-- Repetir para los demás artículos de noticias -->
+      <div>
+        <p>NEW 3 <a href="https://www.globalpropertyguide.com/latin-america/ecuador/buying-guide">Más sobre invertir en
+            inmobiliarias</a></p>
+        </p>
       </div>
+
+      </aside>
+      </section>
     </div>
 
-    <!-- Sección de sobre nosotros -->
-    <div class="about-us">
-      <h2>Sobre nosotros</h2>
-      <p>Información sobre la inmobiliaria: Historia, Misión y visión, Equipo de profesionales, Premios y
-        reconocimientos.</p>
-    </div>
-
-    <!-- Sección de contacto -->
-    <div class="contact">
-      <h2>Contacto</h2>
-      <form action="enviar-mensaje.php" method="POST">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Teléfono:</label>
-        <input type="tel" id="phone" name="phone">
-
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <!-- Captcha -->
-        <!-- ... -->
-
-        <input type="submit" value="Enviar mensaje">
-      </form>
-      <div class="contact-info">
-        <p>Dirección: Dirección de la inmobiliaria</p>
-        <p>Teléfono: Número de teléfono</p>
-        <p>Correo electrónico: correo@inmobiliaria.com</p>
-        <p>Redes sociales: Enlaces a las redes sociales</p>
-      </div>
-    </div>
 
     <!-- Pie de página (footer) -->
     <footer>
       <h2>Pie de página</h2>
-      <p>Información de contacto</p>
-      <p>Enlaces de interés</p>
+      <p>Información de contacto <a href="contacto.html">Contacto</a></p>
+      <p>Ubicación </p>
+      <p>Enlaces de interés <a href="https://www.economist.com/">Here</a></p> 
       <p>Servicios</p>
       <p>Terminos y condiciones</p>
       <p>Preguntas frecuentes</p>

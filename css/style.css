@@ -227,6 +227,8 @@ img{
 
 
 
+
+
 .barra-busqueda {
   display: flex;
   align-items: center;
@@ -477,18 +479,26 @@ column {
 }
 
 .banner img {
-  display: flex; 
+  display: flexbox;
   justify-content: center;
   align-items: center;
   max-width: 100%;
   max-height: 100%;
   width: auto;
-  height: auto;
-  object-fit: cover; /* Para ajustar la imagen o video al contenedor */ 
-  margin: 0;
+ 
+  object-fit: cover;  /* Para ajustar la imagen o video al contenedor */ 
+  margin: 2em;
   width: 100%;
-  height: auto;
-  object-fit: cover; /* Para ajustar la imagen o video al contenedor */
+  height: 60%;
+  object-fit: cover;  /* Para ajustar la imagen o video al contenedor */
+  margin: 0em;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
 
 .banner-text {
@@ -505,7 +515,7 @@ column {
 }
 
 .banner-text h2 {
-  font-size: 7em;
+  font-size: 8em;
   margin-bottom: 20px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   
@@ -521,10 +531,18 @@ column {
   display: inline-block;
   padding: 10px 20px;
   margin: 0 10px;
-  background-color: #F8F8F862;
-  color: black;
+  background-color: #f3f3f328;
+  color: rgb(19, 19, 19);
   text-decoration:dashed;
-  border-radius: 5px;
+  border-radius: 2em;
+  border: 2px solid #747373;
+  box-shadow: #1b1b1b;
+  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 
