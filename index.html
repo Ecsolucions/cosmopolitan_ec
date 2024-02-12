@@ -223,19 +223,16 @@
 
     </nav>
 
-
-
-
-
-
   </header>
 
   <main>
 
-    <div class="column">
+
+    <div class="parent-container">
 
 
       <div class="banner">
+
         <img src="img/LOGOTIPO BLOQUES.jpg" alt="Representación de propiedades">
         <div class="banner-text">
           <a href="propiedades.html" class="cta-button">Ver propiedades</a>
@@ -251,87 +248,99 @@
         </div>
       </div>
 
-      <div class="contenedor">
-        <section>
+      <section>
+
+        <div class="container">
 
 
 
+          <div id="ruleta">
 
-          <aside>
-            
+            <title>Ruleta de premios</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+              .container {
+                text-align: center;
+                margin-top: 50px;
+              }
 
-              <div id="ruleta">
-                
-                    <title>Ruleta de premios</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <style>
-                        .container {
-                            text-align: center;
-                            margin-top: 50px;
-                        }
-                        .premio {
-                            display: none; /* La imagen del premio estará oculta inicialmente */
-                            margin-top: 20px;
-                        }
-                    </style>
-                
-                    <div class="container">
-                        <h1>¡Juega a la ruleta y gana premios!</h1>
-                        <p>Elige un número del 1 al 100:</p>
-                        <input type="number" id="numeroElegido" min="1" max="100">
-                        <button onclick="girarRuleta()">Girar la ruleta</button>
-                        <p id="resultado"></p>
-                
-                        <!-- Imagen del premio -->
-                      <div class="premio">
+              .premio {
+                display: none;
+                /* La imagen del premio estará oculta inicialmente */
+                margin-top: 20px;
+              }
+            </style>
 
-                        <img src="img/Cena premio/cena regalo1.jpg" class="premio" alt="Cena por la compra de una casa">
-                      
-                      </div>
+            <div class="ruleta">
 
-                    </div>
+              <h1>¡Juega a la ruleta y gana premios!</h1>
+              <p>Elige un número del 1 al 100:</p>
+              <input type="number" id="numeroElegido" min="1" max="100">
+              <button onclick="girarRuleta()">Girar la ruleta</button>
+              <p id="resultado"></p>
 
+              <!-- Imagen del premio -->
+              <div class="premio">
 
-                      </div>
-                
-                    <script>
-                        function girarRuleta() {
-                            var numeroElegido = parseInt(document.getElementById('numeroElegido').value);
-                            var numeroGanador = Math.floor(Math.random() * 10) + 1; // Genera un número aleatorio del 1 al 10
-                
-                            if (numeroElegido === numeroGanador) {
-                                document.getElementById('resultado').innerText = '¡Felicidades! ¡Has ganado un premio!';
-                                document.querySelector('.premio').style.display = 'block'; // Muestra la imagen del premio
-                            } else {
-                                document.getElementById('resultado').innerText = 'Lo siento, no has ganado esta vez. Inténtalo de nuevo.';
-                                document.querySelector('.premio').style.display = 'none'; // Oculta la imagen del premio
-                            }
-                        }
-                    </script>
-               
-          
+                <img src="img/Cena premio/cena regalo1.jpg" class="premio" alt="Cena por la compra de una casa">
+
+              </div>
+
             </div>
 
-            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-            <h2>Noticias</h2>
-            <di>
-              <p>NEW 1<a
-                  href="https://www.eleconomista.es/inmobiliaria/noticias/11612515/02/22/El-volumen-de-inversion-inmobiliaria-mundial-aumento-un-38-en-2021.html">Estadísticas</a>
-              </p>
-      </div>
-      <div>
-        <p> NEW 2 <a
-            href="https://profesionalenbienesraices.com/perspectivas-del-mercado-inmobiliario-ecuatoriano-en-2024">Tendencias
-            del mercado</a></p>
-      </div>
-      <div>
-        <p>NEW 3 <a href="https://www.globalpropertyguide.com/latin-america/ecuador/buying-guide">Más sobre invertir en
-            inmobiliarias</a></p>
-        </p>
-      </div>
 
-      </aside>
-      </section>
+          </div>
+
+          <script>
+            function girarRuleta() {
+              var numeroElegido = parseInt(document.getElementById('numeroElegido').value);
+              var numeroGanador = Math.floor(Math.random() * 10) + 1; // Genera un número aleatorio del 1 al 10
+
+              if (numeroElegido === numeroGanador) {
+                document.getElementById('resultado').innerText = '¡Felicidades! ¡Has ganado un premio!';
+                document.querySelector('.premio').style.display = 'block'; // Muestra la imagen del premio
+              } else {
+                document.getElementById('resultado').innerText = 'Lo siento, no has ganado esta vez. Inténtalo de nuevo.';
+                document.querySelector('.premio').style.display = 'none'; // Oculta la imagen del premio
+              }
+            }
+          </script>
+
+
+        </div>
+
+
+        <section id="noticias">
+
+
+          <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+          <h2>Noticias</h2>
+          <div>
+            <p>NEW 1<a
+                href="https://www.eleconomista.es/inmobiliaria/noticias/11612515/02/22/El-volumen-de-inversion-inmobiliaria-mundial-aumento-un-38-en-2021.html">Estadísticas</a>
+            </p>
+
+          </div>
+
+
+            <div>
+              <p> NEW 2 <a
+                  href="https://profesionalenbienesraices.com/perspectivas-del-mercado-inmobiliario-ecuatoriano-en-2024">Tendencias
+                  del mercado</a>
+              </p>
+
+            </div>
+
+            <div>
+              <p>NEW 3 <a href="https://www.globalpropertyguide.com/latin-america/ecuador/buying-guide">Más sobre
+                  invertir en
+                  inmobiliarias</a>
+              </p>
+
+            </div>
+
+        </section>
+
     </div>
 
 
@@ -340,7 +349,7 @@
       <h2>Pie de página</h2>
       <p>Información de contacto <a href="contacto.html">Contacto</a></p>
       <p>Ubicación </p>
-      <p>Enlaces de interés <a href="https://www.economist.com/">Here</a></p> 
+      <p>Enlaces de interés <a href="https://www.economist.com/">Here</a></p>
       <p>Servicios</p>
       <p>Terminos y condiciones</p>
       <p>Preguntas frecuentes</p>
