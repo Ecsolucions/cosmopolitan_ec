@@ -30,12 +30,14 @@
 }
 /* Estilos para la barra de navegación */
 nav {
-  background-color: #000000;
-  padding: 10px;
-  margin: 5px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  border-radius: 35px;
+  background-color: #4e6266;
+  padding: 6em;
+  margin: 10em;
+  font-size: 20px;
+  text-align: center;
+  font-family: "helvetica";
+  font-weight: bold;
+  border-radius: 50em;  
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -61,14 +63,31 @@ li {
 li a {
 
   display: block;
-  color: #077973;
+  color: #075f79;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.267);   
+    border: 2px solid #075f79;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 li a:hover {
     background-color: #3553B49D;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
 
@@ -79,6 +98,13 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #272626;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 
@@ -127,10 +153,11 @@ h1 {
   border-end-end-radius: 10px;
   border-end-start-radius: 10px;
   font-size: 40px;
-  font-weight: bold;
-  color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  font-weight: bold;  
+  color: rgb(red, green, rgb(172, 26, 135));
+  text-shadow: #0092f3 0px 0px 5px, #0092f3 0px 0px 10px, #0092f3 0px 0px 15px, #0092f3 0px 0px 20px, #0092f3 0px 0px 30px, #0092f3 0px 0px 40px, #0092f3 0px 0px 50px, #0092f3 0px 0px 75px; 
+  border: 4% solid #530e1f;
+  border-radius: 5em;
   box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -141,19 +168,18 @@ h1 {
 h2 {
   text-align: center;
   position: relative;
-  padding: 5px;
-  margin: 30px;
-  font-size: 30px;
+  margin: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
-  color: white;
-  border: 1px solid #000000;
-  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  border: 0.5px solid #ccc;
+  border-radius: 3em;
   box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
+
 }
 
 h3 {
@@ -190,14 +216,20 @@ h3 {
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
+  border: 5px solid #080808;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 3em;
+  height: 3em;
   margin-right: 10px;
-  border-radius: 50%; 
-  
 
 }
 
@@ -226,9 +258,6 @@ img{
 }
 
 
-
-
-
 .barra-busqueda {
   display: flex;
   align-items: center;
@@ -243,18 +272,20 @@ img{
   box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button {
-  background-color: #09C48C;
-  color: #0A0A0A;
-  border:rgb(12 12 12);
+.button {
+  background-color: #000000;
+  color: #209734;
+  border:rgb(230, 29, 129);
   padding: 2px;
   border-radius: 5px;
   margin-right: auto;
   margin-left: auto;
   font-size: 12px;
   font-weight: bold;
-  cursor: pointer;
-  box-shadow: #FFFFFFD7 1px 1px 1px 2px;
+  cursor: pointer;  
+  box-shadow: #ffffff 1px 1px 1px 2px;
+  transition: background-color 0.3s ease;
+
 }
 .search-bar {
 
@@ -262,7 +293,6 @@ button {
   flex-direction: row;
   padding: 5px;
   border-radius: 10px;
-  border: 1px solid #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 200px;
   height: 30px;
@@ -272,13 +302,12 @@ button {
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 38px;
-  background-color: #fff;
 }
 
 search-button {
-  background-color: #811ae0;
+ 
   color: #0225f0;
-  border: none;
+  border: 1em solid #2eb174;
   padding: 2px 20px;
   border-radius: 5px;
   margin-left: 5px;
@@ -287,21 +316,14 @@ search-button {
   cursor: pointer;
   box-shadow: #111111D7 1px 1px 1px 2px;
   transition: background-color 0.3s ease;
+
 }
 
 search-button:hover {
-  background-color: #811ae0;
-  color: #FFFFFF;
-  border: none;
-  padding: 2px 20px;
-  border-radius: 5px;
-  margin-left: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: #111111D7 1px 1px 1px 2px;
-  transition: background-color 0.3s ease;
-  
+
+  background-color: #2eb174;
+  color: #ffffff;
+
 }
 
 /* Estilos para la barra de búsqueda */
@@ -325,7 +347,7 @@ search-button:hover {
 }
 
 .search-bar-container:focus-within {
-  border-color: #811ae0;
+  border-color: #383738;
   border: 2px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
