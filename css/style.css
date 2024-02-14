@@ -18,7 +18,7 @@
 
 /* Estilos para el encabezado */
 .header {
-  background-color: #000000;
+  background-color: #494949;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   border-radius: 30px;
@@ -111,9 +111,9 @@ nav ul {
 /* Estilos CSS */
 body {
   /* Color de fondo plateado aluminio */
-  background-color: #BE800B;
+  background-color: #a19379;
   /* Color de texto */
-  color: #0A6296;
+  color: #6f8a99;
   /* Fuente */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -122,7 +122,16 @@ body {
  right: 0;
  bottom: 0;
  left: 0;
+
  
+}@keyframes changeColor {
+  0% { background-color: #a75151; }
+  50% { background-color: #138d87; }
+  100% { background-color: #bb6db7; }
+}
+
+body {
+  animation: changeColor 10s infinite;
 }
 
 
