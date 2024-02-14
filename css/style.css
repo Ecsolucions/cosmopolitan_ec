@@ -1,22 +1,170 @@
-/* Default styles for all screen sizes */
-/* Add your default styles here */
 
-/* Styles for screens with a maximum width of 768px */
+
+body {
+  margin: 0;
+  padding: 1;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+} 
+
+/* Styles for the header */
+header {
+  display: flex;
+  background-color: #494949;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Styles for the navigation bar */
+nav {
+  display: flex;
+  background-color: #4e6266;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Styles for the navigation links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Styles for the navigation links on hover */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the main content container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Styles for the main content */
+.main-content {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Styles for the footer */
+footer {
+  background-color: #494949;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+/* Styles for the navigation links on hover */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the navigation links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Styles for the navigation links on hover */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the navigation bar */
+nav {
+  background-color: #4e6266;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Styles for the navigation links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+} 
+
+/* Styles for the navigation links on hover */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the footer */
+footer {
+  background-color: #494949;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Styles for the navigation links on hover */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the navigation links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Styles for the navigation links on hover */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the footer */
+footer {
+  background-color: #494949;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Styles for the main content container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styles for the main content */
+.main-content {
+  flex: 0 0 70%; /* Adjust the width as needed */
+}
+
+/* Add a media query for smaller screens */
 @media (max-width: 768px) {
-  /* Add responsive styles for smaller screens here */
-}
+  .container {
+    flex-direction: column; /* Change to a single column layout */
+  }
 
-/* Styles for screens with a maximum width of 480px */
-@media (max-width: 480px) {
-  /* Add responsive styles for even smaller screens here */
+  .main-content {
+    flex: 1 0 100%; /* Occupy full width on smaller screens */
+  }
 }
-
-/* Styles for screens with a maximum width of 320px */
-@media (max-width: 320px) {
-  /* Add responsive styles for even even smaller screens here */
-}
-
-/* Estilos para el encabezado */
 .header {
   background-color: #494949;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -244,7 +392,7 @@ h3 {
 }
 
 img{
-  display: flex;
+  display: flexbox;
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
@@ -254,8 +402,9 @@ img{
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 50%;
-  border: 0.5px solid #ccc;
+  border-radius: 20em;
+  border: 0.9em solid #080808;
+  border: 5em;
   box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -606,6 +755,7 @@ column {
 
 .container {
   position: relative;
+
     /* Styles for the container */
   /* You can set the width and height here */
 }
