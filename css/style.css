@@ -127,11 +127,11 @@ body {
 }@keyframes changeColor {
   0% { background-color: #a75151; }
   50% { background-color: #138d87; }
-  100% { background-color: #bb6db7; }
+  100% { background-color: #ad5ea9; }
 }
 
 body {
-  animation: changeColor 10s infinite;
+  animation: changeColor 5s infinite;
 }
 
 
@@ -158,17 +158,18 @@ h1 {
   text-align: center;
   position: relative;
   padding: 5px;
-  margin: 30px;
+  margin: 1em;
   border-end-end-radius: 10px;
   border-end-start-radius: 10px;
   font-size: 40px;
   font-weight: bold;  
-  color: rgb(red, green, rgb(172, 26, 135));
-  text-shadow: #0092f3 0px 0px 5px, #0092f3 0px 0px 10px, #0092f3 0px 0px 15px, #0092f3 0px 0px 20px, #0092f3 0px 0px 30px, #0092f3 0px 0px 40px, #0092f3 0px 0px 50px, #0092f3 0px 0px 75px; 
-  border: 4% solid #530e1f;
+  color: #0092f3;
+  text-shadow: #121213 0px 0px 5px, #878788 0px 0px 10px, #0092f3 0px 0px 15px, #0092f3 0px 0px 20px, #0092f3 0px 0px 30px, #0092f3 0px 0px 40px, #0092f3 0px 0px 50px, #0092f3 0px 0px 75px; 
+  border: 4% solid #777777;
   border-radius: 5em;
-  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(20, 20, 20), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(65, 64, 63), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(25, 25, 26), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
