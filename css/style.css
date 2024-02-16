@@ -4,8 +4,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body {
+  display: flex;
+  background-color: #f2f2f2;
+}
 
 /* Styles for the header */
 header {
@@ -15,11 +20,13 @@ header {
   border-radius: 30px;  
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation: alternate;
+  padding: 1em;
 
 }
-/* Styles for the navigation bar */
+
+
 nav {
-  display: flex;
+  display: fixed;
   background-color: #4e6266;
   color: #fff;
   text-align: flex; 
@@ -41,27 +48,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Styles for the main content container */
-main {
-  
-  position: absolute;
-  background-color: #f0f0f0;
-  border-radius: 30px; 
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 10px;
-  text-align: center;
-  
-}
-
-/* Styles for the footer */
-footer {
-  background-color: #494949;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 /* Styles for the navigation links */
 nav a {
@@ -253,6 +239,7 @@ body {
 
 
 
+
 h1 {
 
   text-align: center;
@@ -322,24 +309,18 @@ h3 {
   text-decoration: underline;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  border: 5px solid #080808;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
 }
 
 
 img{
   display: flex;
+  position: relative;
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
@@ -357,9 +338,28 @@ img{
   box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   
 
+
 }
+
+
+.barra-busqueda {  
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 0.5em solid #807e7e;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px 0 rgb(163 158 141), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(226 2 88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgb(34 116 240), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 
 /*modifica el padding para bajar el header/encabezado*/
@@ -426,47 +426,25 @@ header {
   text-decoration: underline;
 }
 
-.barra-nav li:last-child {
-  margin-right: 0;
+
+/* Styles for the footer */
+footer {
+  background-color: #494949;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.barra-nav img {
-
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  list-style: none;
-  font-weight: bold;
-}
-
-.barra-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  list-style: none;
-  font-weight: bold;
-}
 
 main {
-  display: flex;
-  height: fit-content;
   width: fit-content;
   background-color: #15208156;
   padding: 150px;
   margin: 100px;
-  border: #1b74a8 0.7em solid; 
-  border-radius: 45em;
+  border: #83898d 0.7em solid; 
+  border-radius: 19em;
   box-shadow: 0 2px 4px rgba(161 160 160 / 0.1);
   box-shadow: 0 4px 8px 0 rgb(1 60 255), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgb(8 136 76), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -475,41 +453,18 @@ main {
   
 }
 
-section {
-  margin-bottom: 20px;
-}
-
-section h2 {
+.banner {
+  ruby-position: over;
+  ruby-align: center;
+  text-align: center;
+  color: white;
   margin-bottom: 10px;
-}
-
-section p {
-  margin-bottom: 10px;
-}
-
-section ul {
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-section li {
-  margin-bottom: 5px;
+  width: 20em;
+  height: 25em;
+  background-color: #1b74a8;
 }
 
 
-column {
-
-  display: flex;
-  flex-direction: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-  list-style: none;
-  font-weight: bold;
-
-  
-}
 .banner {
   position: relative;
   text-align: center;
@@ -623,11 +578,60 @@ column {
   /* Styles for the banner */
 }
 
-.container {
-  position: relative;
-
-    /* Styles for the container */
-  /* You can set the width and height here */
+.banner img {
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+nav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  z-index: 1;
+}
 
+.barra-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+container-one {
+  height: max-content;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+
+
+}
